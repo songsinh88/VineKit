@@ -30,7 +30,10 @@ Note: be sure to use the `.xcworkspace` to open your project in Xcode instead of
 
 ## Usage
 
-In AppDelegate.m import VineKit.h. Use the loginWithUsername... method in order to retrieve userid and password as well as session key to call on endpoints requiring authentication. For example:
+1. Import VineKit.h. 
+1. Use the loginWithUsername... method in order to retrieve userid and session key to call on endpoints requiring authentication. 
+
+For example:
 
 ```objc
 #import "VineKit.h"
