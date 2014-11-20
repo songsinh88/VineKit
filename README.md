@@ -11,7 +11,7 @@ Unofficial Documentation is available [here](https://github.com/starlock/vino/wi
 1. [AFNetworking](http://afnetworking.com/) is required for this library to work.
 
 ## Install
-There are two ways to add Plaid to your project:
+There are two ways to add VineKit to your project:
 
 ### Copy manually
 
