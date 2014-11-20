@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "VineKit.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    [VineKit loginWithUsername:@"xxx@example.com" Password:@"xxx" CompletionHandler:^(NSDictionary *output) {
+        NSString *sessionKey = output[@"data"][@"key"];
+        [VineKit meWithKey:sessionKey CompletionHandler:^(NSDictionary *output) {
+            NSLog(@"%@", output);
+        }];
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
